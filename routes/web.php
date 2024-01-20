@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SigninController;
+use App\Http\Controllers\SignupController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,7 +15,6 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/',[SigninController::class,'loginForm'])->name('signin');
+Route::get('signup', [SignupController::class, 'registerForm'])->name('signup');
+Route::get('home', [HomeController::class, 'homePage'])->name('home');

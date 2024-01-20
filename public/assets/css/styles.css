@@ -1,0 +1,128 @@
+body {
+    background: linear-gradient(135deg, #3498db, #8e44ad);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden; /* To prevent scroll bars */
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+.bubble {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    animation: moveBubble 10s infinite alternate ease-in-out;
+}
+.bubble1 {
+    top: 20%;
+    left: 10%;
+    animation-duration: 8s;
+}
+.bubble2 {
+    top: 70%;
+    left: 80%;
+    animation-duration: 12s;
+}
+@keyframes moveBubble {
+    0%, 100% { transform: translateY(0) translateX(0); }
+    50% { transform: translateY(-50px) translateX(50px); }
+}
+.login-form-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 20px;
+    overflow: hidden;
+    animation: bounceLoginForm 3s infinite alternate ease-in-out;
+    position: relative;
+    width: 450px;
+    text-align: center;
+}
+@keyframes bounceLoginForm {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.logo {
+    width: 30px; /* Adjust the size as needed */
+    height: auto;
+    margin-bottom: 20px;
+}
+.form-label {
+    color: #000000;
+    margin-bottom: 10px;
+}
+.form-control {
+    color: #000000;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.form-control-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.btn-primary {
+    background-color: #3498db;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+}
+.links {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.8rem;
+}
+.footer {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffffff;
+    font-size: 0.8rem;
+}
+/* Input Fields */
+.form-label {
+    color: #000000;
+    margin-bottom: 10px;
+    font-size: 0.8rem; /* Reduced font size */
+}
+
+.form-control {
+    color: #000000;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px; /* Adjusted padding for height */
+    font-size: 0.8rem; /* Reduced font size */
+}
+
+.form-control-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/* Button */
+.btn-primary {
+    background-color: #3498db;
+    border: none;
+    width: 21em;
+    padding: 12px; /* Adjusted padding for height */
+    font-size: 1rem;
+}
+h3,h4{
+    font-weight: bold;
+}
