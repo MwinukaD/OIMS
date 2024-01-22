@@ -18,3 +18,5 @@ use App\Http\Controllers\HomeController;
 Route::get('/',[SigninController::class,'loginForm'])->name('signin');
 Route::get('signup', [SignupController::class, 'registerForm'])->name('signup');
 Route::get('home', [HomeController::class, 'homePage'])->name('home');
+
+Route::post('register_process',[SignupController::class,'newClientRegistration'])->name('register_process');

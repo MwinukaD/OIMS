@@ -42,7 +42,7 @@
 </div>
 
 <div class="footer">
-    &copy; 2024 Laravel project by Diaz
+    &copy; 2024 Office Inventories Management System. All rights reserved.
 </div>
 
 <!-- Bootstrap JS and Popper.js (optional) -->
